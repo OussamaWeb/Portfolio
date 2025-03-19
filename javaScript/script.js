@@ -77,15 +77,8 @@ function headerScroll() {
 
         if (currentScroll > 100) {
             header.classList.add("active");
-
-            if (currentScroll > lastScroll) {
-                header.style.transform = "translateY(-100%)";
-            } else {
-                header.style.transform = "translateY(0)";
-            }
         } else {
             header.classList.remove("active");
-            header.style.transform = "translateY(0)";
         }
         lastScroll = currentScroll;
     });
